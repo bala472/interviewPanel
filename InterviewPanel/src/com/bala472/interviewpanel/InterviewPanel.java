@@ -23,11 +23,12 @@ public class InterviewPanel {
         }
         return interviewPanel;
     }
-    private void create(){
-        LoginView loginView = new LoginView();
-
+    private  void create(){
+      LoginView   loginView = new LoginView();
+      loginView.init();
     }
     public static void main(String[] args) {
-
+        InterviewPanel begin = InterviewPanel.getInstance();
+        begin.create();
     }
 }

@@ -10,8 +10,8 @@ public class LoginView {
         loginModel=new LoginModel(this);
     }
     public void init() {
-        System.out.println("--- " + InterviewPanel.getInstance().getAppName() + " --- \nversion "
-                + InterviewPanel.getInstance().getVersion());
+        System.out.println("--- " + InterviewPanel.getInstance().getAppName() + " --- \n\n--- version "
+                + InterviewPanel.getInstance().getVersion()+" ---");
         System.out.println("\n\nPlease login to proceed.");
         proceedLogin();
     }

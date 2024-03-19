@@ -17,10 +17,10 @@ public LoginModel(LoginView loginView){
         }
     }
     private boolean isValidUserName(String userName) {
-        return userName.equals("zsgs")||userName.equals("zsgsAdmin");
+        return userName.equals("bala472")||userName.equals("zsgsAdmin");
     }
     private boolean isValidPassword(String userName, String password) {
-        return (userName.equals("zsgs")&&password.equals("admin"))||(userName.equals("zsgsAdmin")&&password.equals("admin123"));
+        return (userName.equals("bala472")&&password.equals("123456789"))||(userName.equals("zsgsAdmin")&&password.equals("admin123"));
     }
 
 }
