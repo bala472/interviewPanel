@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class CandidateView {
     private CandidateModel candidateModel;
-    CandidateView(){
+    public CandidateView(){
         candidateModel=new CandidateModel(this);
     }
     public void addCandidate(){
         Scanner in = new Scanner(System.in);
         Candidate candidate = new Candidate();
-        System.out.println("Enter candidate name : ");
+        System.out.println("\n\nEnter candidate name : ");
         candidate.setName(in.nextLine());
         System.out.println("Enter Phone Number : ");
         candidate.setPhoneNumber(in.nextLine());
@@ -23,6 +23,9 @@ public class CandidateView {
         System.out.println("Enter address : ");
         candidate.setAddress(in.nextLine());
         candidateModel.addCandidate(candidate);
+    }
+    public void showCandidate(){
+        candidateModel.candidateList();
     }
     public void viewCandidateList(List<Candidate> candidateList){
         System.out.printf("%-15s %-15s %-15s %-15s \n","Name","Phone Number","email","Address","Qualification");

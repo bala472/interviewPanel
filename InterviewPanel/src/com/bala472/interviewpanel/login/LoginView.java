@@ -1,6 +1,9 @@
 package com.bala472.interviewpanel.login;
 
 import com.bala472.interviewpanel.InterviewPanel;
+import com.bala472.interviewpanel.candidate.CandidateView;
+import com.bala472.interviewpanel.interviewSetup.InterviewSetupView;
+import com.bala472.interviewpanel.login.LoginView;
 
 import java.util.Scanner;
 
@@ -30,6 +33,8 @@ public class LoginView {
                         + " - v" + InterviewPanel.getInstance().getVersion() + "----");
        // InterviewPanelSetUpView interviewPanelSetUpView = new InterviewPanelSetUpView();
        // interviewPanelSetUpView.init();
+        InterviewSetupView interviewSetupView = new InterviewSetupView();
+        interviewSetupView.mainMenu();
     }
     public void onLoginFailed(String alertText) {
         System.out.println(alertText);
