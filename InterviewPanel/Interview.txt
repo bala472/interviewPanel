@@ -1,0 +1,32 @@
+﻿Interview Management
+
+
+Type of Application : B2B,B2C
+Target Audience : Admin, Interviewer, Candidate
+Development Time : 4 days
+Tech Stack : Java
+
+
+Admin : 
+* Admin login - P1
+* Creating account for interviewer - P1
+* Creating account for candidate - P1
+* Allocating candidates for Interviewer - P1
+* View list of candidate - P1
+* View list of interviewer - P1
+* Sending result to candidate - P1
+
+
+Interviewer : 
+* Interviewer login - P1
+* Showing list of candidate allotted - P1
+* Enter Score for candidate - P1
+* Not Available option to send Admin that he/she not available to take interview
+* Mark as done option will show interview status completed to both admin,interviewer and candidate
+
+
+Candidate : 
+* Candidate login - P1
+* View Result - P1
+* Show list of jobs available (Candidate can apply )
+* Applied jobs (Status)
