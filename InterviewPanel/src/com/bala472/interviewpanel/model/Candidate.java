@@ -6,6 +6,23 @@ public class Candidate {
     private String phoneNumber;
     private String address;
     private String qualification;
+    private String password;
+    private int marks;
+
+    public void setMarks(int mark){
+        this.marks=mark;
+    }
+    public int getMarks(){
+        return marks;
+    }
+
+
+    public void setPassword(String password){
+        this.password=password;
+    }
+    public String getPassword(){
+        return password;
+    }
 
     public String getName() {
         return name;

@@ -1,5 +1,6 @@
 package com.bala472.interviewpanel.interviewSetup;
 import com.bala472.interviewpanel.candidate.CandidateView;
+import com.bala472.interviewpanel.datalayer.DataLayer;
 import com.bala472.interviewpanel.interviewer.InterviewerView;
 public class InterviewSetupModel {
     private InterviewSetupView interviewSetupView;
@@ -26,4 +27,7 @@ public void viewInterviwerList(){
     interviewerView.showInterviewer();
     interviewSetupView.mainMenu();
 }
+ public void setResult(){
+    DataLayer.getInstance().setResult();
+ }
 }

@@ -18,7 +18,7 @@ public class LoginView {
         System.out.println("\n\nPlease login to proceed.");
         proceedLogin();
     }
-    private void proceedLogin() {
+    public void proceedLogin() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("\nEnter the user name:");
         String userName = scanner.next();
@@ -39,6 +39,13 @@ public class LoginView {
     public void onLoginFailed(String alertText) {
         System.out.println(alertText);
    //     checkForLogin();
+        proceedLogin();
+    } 
+    public void loginSucess(int text ){
+        if(text==1)
+        System.out.println("Logged in as Interviewer Sucessfully\n");
+        if(text==2)
+        System.out.println("Logged in as Candidate Sucessfully\n");
     }
 
 }

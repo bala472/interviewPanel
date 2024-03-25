@@ -3,7 +3,15 @@ package com.bala472.interviewpanel.model;
 public class Interviwer {
     private String name;
     private String email;
-    private int phonenumber;
+    private long phonenumber;
+    private String password;
+
+    public String getPassword(){
+        return password;
+    }
+    public void setPassword(String password){
+        this.password = password;
+    }
 
     public String getName() {
         return name;
@@ -19,10 +27,10 @@ public class Interviwer {
     public void setEmail(String email) {
         this.email = email;
     }
-    public int getPhonenumber() {
+    public long getPhonenumber() {
         return phonenumber;
     }
-    public void setPhonenumber(int phonenumber) {
+    public void setPhonenumber(long phonenumber) {
         this.phonenumber = phonenumber;
     }
 }

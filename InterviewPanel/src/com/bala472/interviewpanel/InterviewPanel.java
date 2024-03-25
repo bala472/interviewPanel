@@ -7,7 +7,7 @@ public class InterviewPanel {
 
     private String appName = "Interview Panel management";
 
-    private String version = "1";
+    private String version = "0.0.1";
     private InterviewPanel(){
 
     }
