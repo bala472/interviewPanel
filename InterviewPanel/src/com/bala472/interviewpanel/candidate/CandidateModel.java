@@ -12,12 +12,13 @@ public class CandidateModel {
     }
     public void addCandidate(Candidate candidate){
         DataLayer.getInstance().setCandidateList(candidate);
+        DataLayer.getInstance().setCandidateListJson();
     }
     public void candidateList(){
         candidateView.viewCandidateList( DataLayer.getInstance().getCandidateList());
     }
     public String result(String mail){
-        if(DataLayer.getInstance().getResult().isEmpty()){
+        if(DataLayer.getInstance().getResult()==null){
             return "Result not yet announced";
         }
        for(Candidate candidate : DataLayer.getInstance().getResult()) {

@@ -29,5 +29,6 @@ public void viewInterviwerList(){
 }
  public void setResult(){
     DataLayer.getInstance().setResult();
+ //   DataLayer.getInstance().setResultJson();
  }
 }

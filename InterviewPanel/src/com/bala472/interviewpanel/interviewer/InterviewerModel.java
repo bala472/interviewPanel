@@ -12,8 +12,9 @@ public class InterviewerModel {
     InterviewerModel(InterviewerView interviewerView){
         this.interviewerView=interviewerView;
     }
-    public void addCandidate(Interviwer interviwer){
+    public void addInterviewer(Interviwer interviwer){
         DataLayer.getInstance().setInterviwerList(interviwer);
+        DataLayer.getInstance().setInterviwerListJson();
     }
     public void interviewerList(){
         interviewerView.viewInterviewerList( DataLayer.getInstance().getInterviwerList());

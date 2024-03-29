@@ -19,6 +19,14 @@ public LoginModel(LoginView loginView){
        }*/
        if(userName.equals("bala")&&
                  password.equals("1234")){
+                    if(DataLayer.getInstance().getCandidateList().isEmpty())
+                    DataLayer.getInstance().loadCandidateListJson();
+                    if(DataLayer.getInstance().getInterviwerList().isEmpty())
+                        DataLayer.getInstance().loadInterviewerListJson();
+                    if(DataLayer.getInstance().getAssign().isEmpty())
+                        DataLayer.getInstance().loadAssignListJson();
+                   // if(DataLayer.getInstance().getResult()==null)
+                    //    DataLayer.getInstance().loadResultJson();
                     loginView.onSuccess();
                     return;
        }

@@ -22,7 +22,7 @@ public class InterviewerView {
         interviwer.setPassword(in.nextLine());
         System.out.println("Enter Phone Number : ");
         interviwer.setPhonenumber(in.nextInt());
-        interviewerModel.addCandidate(interviwer);
+        interviewerModel.addInterviewer(interviwer);
     }
     public void showInterviewer(){
         interviewerModel.interviewerList();
