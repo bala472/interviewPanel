@@ -28,9 +28,9 @@ public class InterviewerView {
         interviewerModel.interviewerList();
     }
     public void viewInterviewerList(List<Interviwer> InterviewerList){
-        System.out.printf("%-15s %-15s %-15s\n","Name","Email","Phone Number");
+        System.out.printf("%-30s %-40s %-15s\n","Name","Email","Phone Number");
         for(Interviwer interviwer:InterviewerList){
-            System.out.printf("%-15s %-15s %-15s \n",interviwer.getName(),interviwer.getEmail(),interviwer.getPhonenumber());
+            System.out.printf("%-30s %-40s %-15s\n",interviwer.getName(),interviwer.getEmail(),interviwer.getPhonenumber());
         }
     }
     public void interviewerMainMenu(String interviewerMail){

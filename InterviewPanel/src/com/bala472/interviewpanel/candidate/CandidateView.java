@@ -31,9 +31,9 @@ public class CandidateView {
         candidateModel.candidateList();
     }
     public void viewCandidateList(List<Candidate> candidateList){
-        System.out.printf("%-15s %-15s %-15s %-15s %-15s %-15s \n","Name","Phone Number","email","Address","Qualification","Marks");
+        System.out.printf("%-20s %-15s %-40s %-40s %-20s %-8s \n","Name","Phone Number","email","Address","Qualification","Marks");
         for(Candidate candidate:candidateList){
-            System.out.printf("%-15s %-15s %-15s %-15s %-15s %-15s \n",candidate.getName(),candidate.getPhoneNumber(),candidate.getEmail(),candidate.getAddress(),candidate.getQualification(),candidate.getMarks());
+            System.out.printf("%-20s %-15s %-40s %-40s %-20s %-8s\n",candidate.getName(),candidate.getPhoneNumber(),candidate.getEmail(),candidate.getAddress(),candidate.getQualification(),candidate.getMarks());
         }
     }
     public void candidateMainMenu(String email){
